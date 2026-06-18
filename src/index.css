@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  /* Brand Colors */
+  --color-brand-dark: #0A1E3B;     /* Deep dark navy for Hero/Footer background */
+  --color-brand-navy: #112F5A;     /* Primary dark text and navy branding */
+  --color-brand-blue: #2B6CB0;     /* Primary blue buttons/links */
+  --color-brand-royal: #1E40AF;    /* Secondary royal blue */
+  --color-brand-light: #F0F4F8;    /* Very light gray/blue background */
+  --color-brand-accent: #3182CE;   /* Focus/accent blue */
+  --color-brand-badge: #EBF8FF;    /* Light blue badge background */
+  --color-brand-badge-text: #2B6CB0; /* Blue badge text color */
+}
+
+/* Base custom styles if needed */
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Smooth Scrolling and Custom Scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
