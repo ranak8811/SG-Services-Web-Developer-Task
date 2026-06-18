@@ -3,6 +3,7 @@ import Hero from "../components/landing/Hero";
 import GlobalReachFeature from "../components/landing/GlobalReachFeature";
 import FeeFreeFeature from "../components/landing/FeeFreeFeature";
 import ShowcaseTalentFeature from "../components/landing/ShowcaseTalentFeature";
+import HelpIsOnlyWay from "../components/landing/HelpIsOnlyWay";
 
 const LandingPage = ({ onNavigate }) => {
   return (
@@ -24,9 +25,12 @@ const LandingPage = ({ onNavigate }) => {
         {/* Feature 3: Showcase Your Talents */}
         <ShowcaseTalentFeature />
 
-        {/* Placeholder for CTA & FAQ & Pricing (Part 3) */}
+        {/* Help Is Only Way Section */}
+        <HelpIsOnlyWay onNavigate={onNavigate} />
+
+        {/* Placeholder for FAQ & Pricing (Part 3) */}
         <div className="bg-slate-50 py-16 text-center text-slate-400 text-sm">
-          CTA, FAQ & Pricing Sections (Coming in Part 3)
+          FAQ & Pricing Sections (Coming in Part 3)
         </div>
       </main>
 
