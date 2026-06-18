@@ -1,6 +1,8 @@
-import React from "react";
 import Navbar from "../components/landing/Navbar";
 import Hero from "../components/landing/Hero";
+import GlobalReachFeature from "../components/landing/GlobalReachFeature";
+import FeeFreeFeature from "../components/landing/FeeFreeFeature";
+import ShowcaseTalentFeature from "../components/landing/ShowcaseTalentFeature";
 
 const LandingPage = ({ onNavigate }) => {
   return (
@@ -11,12 +13,16 @@ const LandingPage = ({ onNavigate }) => {
       {/* Hero Section */}
       <Hero />
 
-      {/* Main Sections (Implemented in subsequent parts) */}
+      {/* Main Sections */}
       <main className="flex-grow">
-        {/* Placeholder for Features Section (Part 2) */}
-        <div className="bg-white py-16 text-center text-slate-400 text-sm border-y border-slate-100">
-          Features Section (Coming in Part 2)
-        </div>
+        {/* Feature 1: Global Reach */}
+        <GlobalReachFeature />
+
+        {/* Feature 2: Fee-Free Forever */}
+        <FeeFreeFeature />
+
+        {/* Feature 3: Showcase Your Talents */}
+        <ShowcaseTalentFeature />
 
         {/* Placeholder for CTA & FAQ & Pricing (Part 3) */}
         <div className="bg-slate-50 py-16 text-center text-slate-400 text-sm">

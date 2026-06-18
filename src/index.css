@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Outfit", sans-serif;
-  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-sans: "Poppins", sans-serif;
 
   /* Brand Colors */
   --color-brand-dark: #0A1E3B;     /* Deep dark navy for Hero/Footer background */
@@ -42,3 +42,33 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #94A3B8;
 }
+
+/* Custom Micro-Animations */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(12deg);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(0.96) rotate(8deg);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 4s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 5s ease-in-out infinite;
+}
+

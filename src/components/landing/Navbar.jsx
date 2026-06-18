@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = ({ onNavigate }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,11 +33,12 @@ const Navbar = ({ onNavigate }) => {
             <img
               src="/assets/Logo.png"
               alt="RemoteRecruit Logo"
-              className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               onError={(e) => {
                 // Fallback text if logo is not loaded
                 e.target.style.display = "none";
-                document.getElementById("navbar-fallback-logo").style.display = "block";
+                document.getElementById("navbar-fallback-logo").style.display =
+                  "block";
               }}
             />
             <span
@@ -58,7 +59,7 @@ const Navbar = ({ onNavigate }) => {
             </button>
             <button
               onClick={() => onNavigate("dashboard")}
-              className="bg-[#2B6CB0] hover:bg-[#2563EB] text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 focus:outline-none cursor-pointer"
+              className="bg-[#4DA8CC] hover:bg-[#2563EB] text-white px-5 py-2.5 rounded-2xl text-sm font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 focus:outline-none cursor-pointer"
             >
               Sign Up
             </button>
