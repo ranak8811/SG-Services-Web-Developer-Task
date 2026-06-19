@@ -1,9 +1,13 @@
+import React from "react";
 import Navbar from "../components/landing/Navbar";
 import Hero from "../components/landing/Hero";
 import GlobalReachFeature from "../components/landing/GlobalReachFeature";
 import FeeFreeFeature from "../components/landing/FeeFreeFeature";
 import ShowcaseTalentFeature from "../components/landing/ShowcaseTalentFeature";
 import HelpIsOnlyWay from "../components/landing/HelpIsOnlyWay";
+import FAQ from "../components/landing/FAQ";
+import Pricing from "../components/landing/Pricing";
+import Footer from "../components/landing/Footer";
 
 const LandingPage = ({ onNavigate }) => {
   return (
@@ -28,16 +32,15 @@ const LandingPage = ({ onNavigate }) => {
         {/* Help Is Only Way Section */}
         <HelpIsOnlyWay onNavigate={onNavigate} />
 
-        {/* Placeholder for FAQ & Pricing (Part 3) */}
-        <div className="bg-slate-50 py-16 text-center text-slate-400 text-sm">
-          FAQ & Pricing Sections (Coming in Part 3)
-        </div>
+        {/* FAQ Section */}
+        <FAQ />
+
+        {/* Pricing Section */}
+        <Pricing onNavigate={onNavigate} />
       </main>
 
-      {/* Footer (Part 3) */}
-      <footer className="bg-brand-dark py-8 text-center text-slate-400 text-sm">
-        Footer Section (Coming in Part 3)
-      </footer>
+      {/* Footer Section */}
+      <Footer onNavigate={onNavigate} />
     </div>
   );
 };
