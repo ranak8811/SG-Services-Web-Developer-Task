@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("landing");
@@ -17,6 +18,7 @@ const App = () => {
       ) : (
         <DashboardPage onNavigate={handleNavigate} />
       )}
+      <ScrollToTop />
     </>
   );
 };

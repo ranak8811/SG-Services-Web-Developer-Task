@@ -224,6 +224,7 @@ const DashboardPage = ({ onNavigate }) => {
                     src="/assets/Icon.png"
                     alt="Company icon"
                     className="w-8 h-8 object-contain"
+                    loading="lazy"
                     onError={(e) => {
                       e.target.src = "/assets/RR.png";
                     }}

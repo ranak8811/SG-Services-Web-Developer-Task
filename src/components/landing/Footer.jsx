@@ -23,6 +23,7 @@ const Footer = ({ onNavigate }) => {
               src="/assets/Logo.png"
               alt="RemoteRecruit Logo"
               className="h-8 w-auto object-contain brightness-0 invert transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
             />
           </button>
 
@@ -107,6 +108,7 @@ const Footer = ({ onNavigate }) => {
                 src="/assets/Icon.png"
                 alt="RR Badge"
                 className="w-12 h-12 object-contain"
+                loading="lazy"
                 onError={(e) => {
                   e.target.src = "/assets/RR.png";
                 }}

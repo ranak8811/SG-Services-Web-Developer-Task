@@ -55,6 +55,7 @@ const ShowcaseTalentFeature = () => {
                         src="/assets/play_button.png"
                         alt="Play Button"
                         className="w-4 h-4 translate-x-0.5 object-contain"
+                        loading="lazy"
                       />
                     </div>
                   </div>

@@ -125,6 +125,7 @@ const Sidebar = ({ activeTab, setActiveTab, onNavigate }) => {
                 src="/assets/Guru.png"
                 alt="Profile Avatar"
                 className="w-9 h-9 rounded-full border border-blue-400 object-cover bg-slate-800"
+                loading="lazy"
               />
               <div className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 rounded-full border border-[#0A1E3B]" />
             </div>
